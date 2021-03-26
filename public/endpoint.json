@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "sellerName": "Mr. Pickles",
+        "brief": "Potatoes and other vegetables",
+        "price": 60
+    },
+    {
+        "id": 2,
+        "sellerName": "Markéta Davidová",
+        "brief": "Good price of potatoes",
+        "price": 27.99
+    },
+    {
+        "id": 3,
+        "sellerName": "Hanna Chmielewska",
+        "brief": "Big potatoes for the whole country",
+        "price": 96.2
+    },
+    {
+        "id": 4,
+        "sellerName": "Manuela Cardoso",
+        "brief": "My potatoes are tasty",
+        "price": 68.9
+    },
+    {
+        "id": 5,
+        "sellerName": "Mattie Foxx",
+        "brief": "Potatoes potatoes potatoes potatoes",
+        "price": 999.9
+    },
+    {
+        "id": 6,
+        "sellerName": "Norris Lemaître",
+        "brief": "Potatoes with soil",
+        "price": 45.5
+    },
+    {
+        "id": 7,
+        "sellerName": "Yasuri Yamileth",
+        "brief": "Potatoes with Y",
+        "price": 120
+    },
+    {
+        "id": 8,
+        "sellerName": "Takitatakiku",
+        "brief": "Potatoes??",
+        "price": 334.25
+    },
+    {
+        "id": 9,
+        "sellerName": "Wajid Dhakir Nhas",
+        "brief": "Potato b00m (?",
+        "price": 29.9
+    },
+    {
+        "id": 10,
+        "sellerName": "M'aiq the Liar",
+        "brief": "Potatoes' father was also called potato",
+        "price": 54.2
+    }
+]
