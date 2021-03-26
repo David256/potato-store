@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about">
     <!-- First title -->
     <div class="row mb-4">
       <div class="col-12">
