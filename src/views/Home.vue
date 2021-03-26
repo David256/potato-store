@@ -12,13 +12,8 @@ export default {
   components: {
     Product,
   },
+  mounted() {
+    this.$store.dispatch('loadProducts');
+  },
 };
-/**
- * ,
-  data: {
-    items: [
-      { sellerName: 'Mr. Pickle', brief: 'Potatoes $3', price: 3 },
-    ]
-  }
- */
 </script>
