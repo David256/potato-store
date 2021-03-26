@@ -26,12 +26,19 @@
           </li>
         </ul>
       </div>
+
+      <CartInline/>
     </nav>
   </div>
 </template>
 
 <script>
+import CartInline from '@/components/CartInline.vue';
+
 export default {
   name: 'Header',
+  components: {
+    CartInline,
+  },
 };
 </script>
