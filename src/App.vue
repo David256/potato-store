@@ -25,7 +25,7 @@ export default {
   font-family: arial narrow;
   font-style: normal;
   font-weight: 400;
-  src: url('@/../../public/arial-narrow.ttf') format('truetype')
+  src: url('assets/arial-narrow.ttf') format('truetype')
 }
 
 #app {
