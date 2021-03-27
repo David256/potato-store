@@ -8,7 +8,11 @@
       aria-expanded="false">
       <img src="../assets/shopping-cart.svg" alt="">
       Cart
-      <span class="badge bg-danger text-white">{{ productsInCart.length }}</span>
+      <span
+        class="badge bg-danger text-white"
+        v-if="productsInCart.length">
+        {{ productsInCart.length }} item
+      </span>
     </button>
 
     <div class="dropdown-menu" aria-labelledby="dropdownCardInline">
