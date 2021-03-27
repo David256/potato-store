@@ -49,8 +49,15 @@
       tabindex="-1"
       aria-disabled="true"
       v-if="productsInCart.length">
-      <b>Total: ${{sumTotalPrices}}</b>
-    </a>
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <b>Total: ${{sumTotalPrices}}</b>
+          </div>
+          <div>
+            <router-link to="/cart" class="btn btn-primary">Buy</router-link>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </template>
