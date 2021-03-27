@@ -11,7 +11,10 @@
           <p class="card-text">
             {{ product.brief }}
           </p>
-          <button class="btn btn-success" @click="addToCart">Add to cart</button>
+          <button
+            class="btn"
+            v-bind:class="{'btn-success': !isAddedToCart(product.id)}"
+            @click="addToCart(product.id)">Add to cart</button>
         </div>
       </div>
     </div>
@@ -23,12 +26,26 @@ import Vuex from 'vuex';
 
 export default {
   name: 'Product',
+  added: false,
+  state: {
+  },
   computed: {
-    ...Vuex.mapState(['products']),
+    ...Vuex.mapState(['products', 'productsInCart']),
   },
   methods: {
-    addToCart() {
-      //
+    addToCart(id) {
+      if (!this.productsInCart.includes(id)) {
+        console.log('Adding product', id);
+        this.productsInCart.push(id);
+      } else {
+        console.log('Removing product', id);
+        const index = this.productsInCart.indexOf(id);
+        this.productsInCart.splice(index, 1);
+        console.log('Index', index);
+      }
+    },
+    isAddedToCart(id) {
+      return this.productsInCart.includes(id);
     },
   },
 };
