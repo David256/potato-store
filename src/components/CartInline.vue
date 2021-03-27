@@ -27,7 +27,10 @@
       <a class="dropdown-item" href="#" v-for="product in productsInCart" v-bind:key="product.id">
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <button class="btn btn-sm btn-warning mr-3" aria-label="Remove">
+            <button
+              class="btn btn-sm btn-warning mr-3"
+              aria-label="Remove"
+              @click="deleteProduct(product)">
               <img src="../assets/trash.svg" alt="(x)">
             </button>
             <span>{{product.brief}}</span>
@@ -68,7 +71,12 @@ export default {
     },
   },
   methods: {
-
+    deleteProduct(product) {
+      const index = this.productsInCart.indexOf(product);
+      if (index >= 0) {
+        this.productsInCart.splice(index, 1);
+      }
+    },
   },
 };
 </script>
