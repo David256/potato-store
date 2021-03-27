@@ -47,7 +47,7 @@ export default {
       }
     },
     isAddedToCart(product) {
-      return this.productsInCart.includes(product);
+      return this.productsInCart.some((p) => p.id === product.id);
     },
   },
 };
