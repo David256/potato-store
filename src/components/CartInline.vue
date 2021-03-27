@@ -24,16 +24,16 @@
       </a>
 
       <!-- The products -->
-      <a class="dropdown-item" href="#" v-for="id in productsInCart" v-bind:key="id">
+      <a class="dropdown-item" href="#" v-for="product in productsInCart" v-bind:key="product.id">
         <div class="d-flex justify-content-between align-items-center">
           <div>
             <button class="btn btn-sm btn-warning mr-3" aria-label="Remove">
               <img src="../assets/trash.svg" alt="(x)">
             </button>
-            <span>{{getProductSummaryById(id).brief}}</span>
+            <span>{{product.brief}}</span>
           </div>
           <div class="ml-2">
-            <b>${{getProductSummaryById(id).price}}</b>
+            <b>${{product.price}}</b>
           </div>
         </div>
       </a>
@@ -61,22 +61,14 @@ export default {
     ...Vuex.mapState(['products', 'productsInCart']),
 
     sumTotalPrices() {
-      const filteredProducts = this.products
-        .filter((product) => this.productsInCart.includes(product.id));
-      console.log(filteredProducts.length);
-
       let sum = 0;
-      filteredProducts.forEach((product) => { sum += product.price; });
+      this.productsInCart.forEach((product) => { sum += product.price; });
       console.log('Total:', sum);
-
       return Math.round(sum * 100) / 100;
     },
   },
   methods: {
-    getProductSummaryById(id) {
-      const filteredProducts = this.products.filter((product) => product.id === id);
-      return filteredProducts[0];
-    },
+
   },
 };
 </script>

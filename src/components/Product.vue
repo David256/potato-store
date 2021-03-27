@@ -13,9 +13,9 @@
           </p>
           <button
             class="btn"
-            v-bind:class="{'btn-success': !isAddedToCart(product.id)}"
-            @click="addToCart(product.id)">
-            {{ isAddedToCart(product.id) ? "Remove" : "Add to cart"}}
+            v-bind:class="{'btn-success': !isAddedToCart(product)}"
+            @click="addToCart(product)">
+            {{ isAddedToCart(product) ? "Remove" : "Add to cart"}}
           </button>
         </div>
       </div>
@@ -35,19 +35,19 @@ export default {
     ...Vuex.mapState(['products', 'productsInCart']),
   },
   methods: {
-    addToCart(id) {
-      if (!this.productsInCart.includes(id)) {
-        console.log('Adding product', id);
-        this.productsInCart.push(id);
+    addToCart(product) {
+      if (!this.productsInCart.includes(product)) {
+        console.log('Adding product', product.id);
+        this.productsInCart.push(product);
       } else {
-        console.log('Removing product', id);
-        const index = this.productsInCart.indexOf(id);
+        console.log('Removing product', product.id);
+        const index = this.productsInCart.indexOf(product);
         this.productsInCart.splice(index, 1);
         console.log('Index', index);
       }
     },
-    isAddedToCart(id) {
-      return this.productsInCart.includes(id);
+    isAddedToCart(product) {
+      return this.productsInCart.includes(product);
     },
   },
 };
