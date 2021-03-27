@@ -14,7 +14,9 @@
           <button
             class="btn"
             v-bind:class="{'btn-success': !isAddedToCart(product.id)}"
-            @click="addToCart(product.id)">Add to cart</button>
+            @click="addToCart(product.id)">
+            {{ isAddedToCart(product.id) ? "Remove" : "Add to cart"}}
+          </button>
         </div>
       </div>
     </div>
