@@ -38,7 +38,7 @@
 
       <!-- Title -->
       <div class="col-12 mb-4">
-        <h3 class="text-center">from field to your kitchen room without intermediary</h3>
+        <h3 class="text-center">From field to your kitchen room without intermediary</h3>
       </div>
 
       <!-- The photos -->
