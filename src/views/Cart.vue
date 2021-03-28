@@ -17,9 +17,9 @@
 
           <ul class="list-group mb-3">
             <li class="list-group-item d-flex justify-content-between lh-condensed"
-              v-for="(product,i) in productsInCart" v-bind:key="product.id">
+              v-for="(product,index) in productsInCart" v-bind:key="product.id">
               <div>
-                <h6 class="my-0">{{i+1}}th product</h6>
+                <h6 class="my-0">{{index+1}}th product</h6>
                 <small class="text-muted">{{product.brief}}</small>
               </div>
               <span class="text-muted">${{product.price}}</span>
@@ -60,10 +60,8 @@
             <div class="mb-3">
               <label for="inputEmail">Email</label>
               <input
-                type="email"
-                id="inputEmail"
-                class="form-control"
-                placeholder="username@email.com">
+                type="email" id="inputEmail"
+                class="form-control" placeholder="username@email.com">
               <div class="invalid-feedback">
                 Please enter a valid email address.
               </div>
@@ -99,8 +97,12 @@ export default {
     },
   },
   methods: {
-    validForm(form) {
-      return form;
+    validForm(event) {
+      if (event.target.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      event.target.classList.add('was-validated');
     },
   },
 };
