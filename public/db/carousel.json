@@ -1,0 +1,20 @@
+[
+    {
+        "path": "img/carousel/potatoes-on-earth.jpg",
+        "source": "Image by <a href=\"https://pixabay.com/es/users/couleur-1195798/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3690562\">Couleur</a> from <a href=\"https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3690562\">Pixabay</a>",
+        "title": "We are interested in the natural",
+        "description": "We are always interested in farmers who prefer the natural and healthy"
+    },
+    {
+        "path": "img/carousel/potatoes-on-hand.jpg",
+        "source": "Image by <a href=\"https://pixabay.com/es/users/rupprich-41926/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=172200\">Günter Rupprich</a> from <a href=\"https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=172200\">Pixabay</a>",
+        "title": "Always fresh products",
+        "description": "You will always be buying the latest harvest, the freshest and tastiest"
+    },
+    {
+        "path": "img/carousel/potatoes-farmer.jpg",
+        "source": "Image by <a href=\"https://pixabay.com/es/users/rschaubhut-11564814/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5642608\">René Schaubhut</a> from <a href=\"https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5642608\">Pixabay</a>",
+        "title": "We connect families with families",
+        "description": "Every time a buyer buys in our store, a family benefits"
+    }
+]
