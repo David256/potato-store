@@ -12,7 +12,7 @@ export default createStore({
   },
   actions: {
     async loadProducts(context) {
-      const data = await fetch('endpoint.json');
+      const data = await fetch('db/products.json');
 
       /**
        * @type { Array }
