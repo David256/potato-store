@@ -105,5 +105,10 @@ export default {
       event.target.classList.add('was-validated');
     },
   },
+  created() {
+    if (this.productsInCart.length === 0) {
+      this.$router.push('/');
+    }
+  },
 };
 </script>
